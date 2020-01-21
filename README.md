@@ -65,11 +65,12 @@ A high-level description of `cilantro` can be found in our [technical report](ht
 
 ## Dependencies
 - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) (3.3 or newer) [**required**]
+- [CMake](https://cmake.org/files/v3.9/cmake-3.9.6-Linux-x86_64.sh) (3.9.6)
 - [Pangolin](https://github.com/stevenlovegrove/Pangolin) (built with Eigen enabled) [**optional**; needed for visualization modules and most examples]
 
 ## Building
 `cilantro` is developed and tested on Ubuntu 14.04, 16.04, and 18.04 variants using [CMake](https://cmake.org/).
-Please note that you may have to manually set up a recent version of Eigen on Ubuntu 14.04, as the one provided in the official repos is outdated.
+Please note that you may have to manually set up a recent version of Eigen on Ubuntu 14.04, as the one provided in the official repos is outdated. Ensure latest Eigen is built before Pangolin to prevent compilation errors.
 To clone and build the library (with bundled examples), execute the following in a terminal:
 
 ```
